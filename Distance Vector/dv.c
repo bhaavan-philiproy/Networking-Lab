@@ -18,6 +18,8 @@ void main()
 	scanf("%d",&H);
 	printf("Enter number of links\n");
 	scanf("%d",&L);
+	printf("Enter Source\n");
+	scanf("%d",&s);
 	struct Network* n=(struct Network*)malloc(sizeof(struct Network));
 	n->H=H;
 	n->link=(struct Link*)malloc(n->L *sizeof(struct Link));
