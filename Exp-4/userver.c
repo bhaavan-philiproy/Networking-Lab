@@ -10,7 +10,7 @@ int main(int argc,char* argv[])
 		printf("Input format not correct");
 	int sockfd=socket(AF_INET,SOCK_DGRAM,0);
 	if(sockfd==-1)
-		printf("Error in soket();");
+		printf("Error in socket();");
 	server.sin_family=AF_INET;
 	server.sin_addr.s_addr=INADDR_ANY;
 	server.sin_port=htons(atoi(argv[1]));
